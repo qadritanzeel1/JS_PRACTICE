@@ -1,2 +1,2 @@
-# LearningGitHub
-This is the basics
+# JS Practice
+From basics to advance
