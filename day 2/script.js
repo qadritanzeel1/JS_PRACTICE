@@ -91,34 +91,77 @@ let arr = ["test1","test2","test3","test4"];
 //return new array with all the elaments at odd postions for "odd"
 //return new array with all the elements at even postions for "even";
 
-let arr1 = [3,5,7,88,99,9,32];
-let arr2 = [9,5,6,3,2,1,6,7,9];
+// let arr1 = [3,5,7,88,99,9,32];
+// let arr2 = [9,5,6,3,2,1,6,7,9];
 
 
-function evenOdd(arr,condition){
-    let nArr = [];
-    if(condition==="odd"){
-        for(let i = 0;i<arr.length;i++){
-            if(i % 2 === 1){
-           nArr.push(arr[i]);
-            }
+// function evenOdd(arr,condition){
+//     let nArr = [];
+//     if(condition==="odd"){
+//         for(let i = 0;i<arr.length;i++){
+//             if(i % 2 === 1){
+//            nArr.push(arr[i]);
+//             }
+//         }
+//     }else if(condition==="even"){
+//          for(let i = 0;i<arr.length;i++){
+//             if(i%2===0){
+//            nArr.push(arr[i]);
+//             }
+//     }
+// }
+// return nArr;
+// }
+
+// let test1 = evenOdd(arr1,"even");
+// console.log(test1);
+// let test2 = evenOdd(arr2,"odd");
+// console.log(test2)
+
+//reverse a string
+
+
+// let str = "Helloworld";
+// let reversed = ""
+
+// for(let i = str.length-1;i>=0;i--){
+//     reversed += str[i]
+// }
+// console.log(reversed)
+
+
+// write a function and reverse a string with spaces ,but reversed strings should not have spaces
+// example let str = o n e it should be eno without spaces
+let str = "he  l     l   o"
+function revString(str){
+    let nstr = ""
+    for(let i = str.length-1;i>=0;i--){
+        if(str[i]!==" "){
+            nstr = nstr + str[i]
         }
-    }else if(condition==="even"){
-         for(let i = 0;i<arr.length;i++){
-            if(i%2===0){
-           nArr.push(arr[i]);
-            }
     }
+    return nstr
 }
-return nArr;
+
+let fn = revString(str)
+console.log(fn)
+
+let arr1= [1,2,3,3,3,3,4,5,6,6,6,7,7,7] // searchText = 7
+
+function searchEngine(arr,st){
+    let count= 0;
+    let str = ""
+    for(let i = 0; i<=arr.length-1;i++){
+        if(arr[i]==st){
+            count++
+            str +=arr[i] + " "
+        }
+    }
+    return `the count of elements is :${count},and the results are : ${str}`
 }
 
-let test1 = evenOdd(arr1,"even");
-console.log(test1);
-let test2 = evenOdd(arr2,"odd");
-console.log(test2)
-
-
+let result = searchEngine(arr1,6);
+console.log(result)
 
 
 
