@@ -1,4 +1,4 @@
-// premitive an dnon premitive datatypes what actually means
+// premitive and non premitive datatypes what actually means
 
 // Array - array is something in which we can store the collection of data
 
