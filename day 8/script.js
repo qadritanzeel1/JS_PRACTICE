@@ -11,8 +11,29 @@ function colorPicker(color) {
     if (color == "Blue") return "Blue color is present here "
     else if (color == "Red") return "Red color is present here";
     else if (color == "Maroon") return "Maroon color is present here";
-    else if (color == "Pink") return "Red color is present here"; else return "invalid input";
+    else if (color == "Pink") return "Red color is present here"; 
+    else return "invalid input";
+}
+
+// let c = colorPicker(prompt("Please Enter a Color"));
+// console.log(c);
+
+
+//ternary operator
+// let a = "10";
+// let b = 10
+// console.log(a===b ? "they are equal" : "they are not equal")
+
+// condition ? expression : another expression 
+
+
+function colorPicker(color) {
+   return color == "Blue" ? "Blue color is present" 
+   : color == "Red" ? "Red color is present"
+   : color == "Yellow" ? "Yellow color is present"
+   : color == "Pink" ? "Pink color is present"
+   : "invalid input"
 }
 
 let c = colorPicker(prompt("Please Enter a Color"));
-console.log(c)
+console.log(c);
