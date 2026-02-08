@@ -12,3 +12,4 @@ let obj = {
   "first name": "Ayaan"
 };
 console.log(obj["first name"]);
+
